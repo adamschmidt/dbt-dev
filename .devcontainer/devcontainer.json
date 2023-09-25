@@ -1,0 +1,25 @@
+{
+    "name": "dbt",
+    "remoteUser": "vscode",
+    // "image": "mcr.microsoft.com/vscode/devcontainers/python:3.11",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "dbt",
+    "workspaceFolder": "/workspaces/dbt",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-azuretools.vscode-docker",
+                "innoverio.vscode-dbt-power-user",
+                "dorzey.vscode-sqlfluff",
+                "ms-python.python",
+                "ms-python.vscode-pylance"
+            ],
+            "settings": {
+                "files.associations": {
+                    "*.sql": "jinja-sql"
+                },
+                "sqlfluff.format.enabled": true
+            }
+        }
+    }
+}
